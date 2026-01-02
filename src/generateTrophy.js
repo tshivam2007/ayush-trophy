@@ -3,7 +3,7 @@ const fs = require("fs");
 try {
   const data = JSON.parse(fs.readFileSync("data.json", "utf-8"));
 
-  // Fixed Widescreen Layout - Animation Bug Removed
+  // Fixed Widescreen Layout - Same Design, Repos replaced with Streak 🔥
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
     <defs>
@@ -24,18 +24,11 @@ try {
         .stat-number { font-family: sans-serif; font-weight: 800; font-size: 40px; fill: white; }
         
         /* Animation Classes */
-        /* Maine yahan se 'transform' hata diya hai taaki position reset na ho */
         .fade-in { animation: fadeIn 2s ease-in-out; }
         .pulse { animation: pulse 3s infinite alternate; }
         
-        @keyframes fadeIn { 
-          from { opacity: 0; } 
-          to { opacity: 1; } 
-        }
-        @keyframes pulse { 
-          0% { transform: scale(1); transform-origin: center; } 
-          100% { transform: scale(1.05); transform-origin: center; } 
-        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes pulse { 0% { transform: scale(1); transform-origin: center; } 100% { transform: scale(1.05); transform-origin: center; } }
       </style>
     </defs>
 
@@ -57,15 +50,15 @@ try {
     </g>
 
     <g transform="translate(590, 90)">
-      <rect x="0" y="0" width="160" height="110" rx="10" fill="rgba(0,0,0,0.3)" stroke="#ffcc00" stroke-width="2"/>
-      <text x="80" y="35" text-anchor="middle" class="stat-label" fill="#ffcc00">Public Repos</text>
-      <text x="80" y="80" text-anchor="middle" class="stat-number fade-in">${data.public_repos}</text>
+      <rect x="0" y="0" width="160" height="110" rx="10" fill="rgba(0,0,0,0.3)" stroke="#ff5e00" stroke-width="2"/>
+      <text x="80" y="35" text-anchor="middle" class="stat-label" fill="#ff5e00">Current Streak</text>
+      <text x="80" y="80" text-anchor="middle" class="stat-number fade-in">${data.current_streak} 🔥</text>
     </g>
 
   </svg>`;
 
   fs.writeFileSync("trophy.svg", svg);
-  console.log("🏆 Fixed Widescreen Layout Updated!");
+  console.log("🏆 Streak Trophy SVG Updated!");
   
 } catch (error) {
   console.error("Error generating SVG:", error);
