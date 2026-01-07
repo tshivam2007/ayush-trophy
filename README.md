@@ -45,8 +45,8 @@ Copy the code below and paste it into your profile's `README.md`.
 
 ```html
 <div align="center">
-  <a href="[https://github.com/ayushraistudio/ayush-trophy](https://github.com/ayushraistudio/ayush-trophy)">
-    <img src="[https://raw.githubusercontent.com/YOUR_USERNAME/ayush-trophy/main/trophy.svg](https://raw.githubusercontent.com/YOUR_USERNAME/ayush-trophy/main/trophy.svg)" width="800" />
+  <a href="https://github.com/ayushraistudio/ayush-trophy">
+    <img src="https://raw.githubusercontent.com/YOUR_USERNAME/ayush-trophy/main/trophy.svg" width="800" />
   </a>
 </div>
 
