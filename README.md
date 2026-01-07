@@ -84,4 +84,3 @@ Want to create a **New Theme** (Cyberpunk, Gold, Minimal) or improve the code? W
 <p align="center"> 
   <b>⭐ Created by <a href="https://github.com/ayushraistudio">Ayush Rai</a> | Don't forget to Star this repo! ⭐</b> 
 </p>
-
